@@ -1,0 +1,115 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 37px 74px;
+}
+
+
+header .header .header-img img{
+    width: 260px;
+}
+header .header .links a{
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+header .header .links a:hover{
+    background-color: black;
+    color: white;
+    transition: 0.4s ease;
+}
+
+
+/* contact-section1 */
+
+
+.contact-section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 25px;
+    margin-top: 70px;
+}
+
+.contact-section1 h1{
+    font-size: 400%;
+    /* text-align: center; */
+    margin: 0px;
+
+}
+.contact-section1 p{
+    font-size: 120%;
+    /* text-align: center; */
+    text-decoration: none;
+    color: black;
+    margin: 0px;
+
+}
+.contact-section1 p a{
+    text-decoration: underline;
+    color: black;
+
+}
+.contact-section1 img{
+   height: 500px;
+   width: 40%;
+   
+}
+
+/* contact-section2 */
+
+.contact-section2{
+    width: 40%;
+    margin: 70px auto;
+}
+.contact-section2 h1{
+    font-size: 300%;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 20px;
+
+}
+.contact-section2 p{
+    font-size: 110%;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 20px;
+
+}
+.contact-section2 .our-values img{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+
+
+/* Footer */
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 70px;
+    
+}
+
+.footer .links{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+.footer .links a img{
+    width: 25px;
+}

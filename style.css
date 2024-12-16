@@ -1,0 +1,135 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* header section */
+
+header .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 37px 74px;
+}
+
+
+header .header .header-img img{
+    width: 260px;
+    cursor: pointer;
+}
+header .header .links a{
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+header .header .links a:hover{
+    background-color: black;
+    color: white;
+    transition: 0.4s ease;
+}
+
+
+/* section1 */
+
+.section1{
+    background-image: url("./Assets/qtq80-ONhu64-2048x1152.jpeg");
+    height: 430px;
+   
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.section1 .info{
+    padding: 50px;
+}
+.section1 h1{
+    margin: 0px;
+    font-size: 75px;
+    color: hsl(28, 78%, 44%);
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.section1 .contact-btn{
+    
+    padding: 17px 40px;
+    background-color: hsl(28, 78%, 44%);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.section1 .contact-btn:hover{
+    background-color: hsl(28, 68%, 52%);
+}
+
+
+/* section 2 */
+
+
+.section2 h1{
+    text-align: center;
+    font-size: 50px;
+
+}
+
+.section2 .products{
+    margin: 127px 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 25px;
+
+}
+.section2 .products .product-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 33%;
+    
+}
+.section2 .products .product-info img{
+    width: 100%;
+    height: 400px;
+  
+    
+}
+.section2 .products .product-info p{
+    text-align: center;
+}
+
+
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 70px;
+    
+}
+
+.footer .links{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+.footer .links a img{
+    width: 25px;
+}
+
+@media (max-width: 990px) {
+
+
+}
+
+
+
+
