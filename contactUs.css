@@ -1,18 +1,34 @@
-*{
+* {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-header .header{
+
+/* Fixed Header */
+header {
+    position: fixed; /* Fixes the header at the top */
+    top: 0; /* Sticks it to the top of the viewport */
+    left: 0;
+    width: 100%; /* Full width */
+    background-color: white; /* Ensures header is opaque */
+    z-index: 1000; /* Keeps header above other content */
+   
+}
+
+header .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 37px 74px;
+    padding: 20px 74px; /* Adjust padding */
 }
 
-
-header .header .header-img img{
+header .header .header-img img {
     width: 260px;
+    cursor: pointer;
 }
-header .header .links a{
+
+header .header .links a {
     font-size: 30px;
     text-decoration: none;
     color: black;
@@ -22,12 +38,18 @@ header .header .links a{
     border-radius: 50px;
     cursor: pointer;
 }
-header .header .links a:hover{
+
+header .header .links a:hover {
     background-color: black;
     color: white;
     transition: 0.4s ease;
 }
 
+/* Adjust body to account for fixed header */
+body {
+    margin: 0;
+    padding: 0;
+}
 
 /* contact-section1 */
 
@@ -38,7 +60,7 @@ header .header .links a:hover{
     align-items: center;
     flex-direction: column;
     row-gap: 25px;
-    margin-top: 70px;
+    margin-top: 100px;
 }
 
 .contact-section1 h1{
@@ -112,4 +134,147 @@ header .header .links a:hover{
 }
 .footer .links a img{
     width: 25px;
+}
+@media (max-width: 1700px){
+    .contact-section1 img{
+        height: 400px;
+        width: 50%;
+        
+     }
+    .contact-section2{
+        width: 60%;
+        margin: 60px auto;
+    }
+}
+@media (max-width: 990px) {
+    header .header {
+        padding: 10px 20px;
+    }
+
+    header .header .links a {
+        font-size: 20px;
+        padding: 8px 15px;
+    }
+    
+    .contact-section1{
+        margin-top: 80px;
+    }
+    
+    .contact-section1 h1{
+        font-size: 350%;
+        margin: 0px;
+    
+    }
+    .contact-section1 p{
+        font-size: 150%;
+        /* text-align: center; */
+        margin: 0px;
+    
+    }
+    .contact-section1 p a{
+        text-decoration: underline;
+        color: black;
+    
+    }
+    .contact-section1 img{
+       height: 400px;
+       width: 60%;
+       
+    }
+    .contact-section2{
+        width: 80%;
+        margin: 60px auto;
+    }
+    .contact-section2 h1{
+        font-size: 220%;
+        text-align: center;
+        margin: 0px;
+        margin-bottom: 20px;
+        width: 100%;
+    
+    }
+    .contact-section2 p{
+        font-size: 120%;
+        
+        margin: 0px;
+        margin-bottom: 20px;
+    
+    }
+    .contact-section2 .our-values img{
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .footer {
+        flex-direction: column;
+        row-gap: 20px;
+        margin: 20px;
+    }
+}
+
+@media (max-width: 600px){
+    header .header .header-img img {
+        width: 120px;
+        cursor: pointer;
+    }
+    header .header .links a {
+        font-size: 17px;
+       
+        font-weight: 500;
+        border: 2px solid black;
+        padding: 6px 10px;
+    }
+    .contact-section1{
+        row-gap: 10px;
+        margin-top: 60px;
+    }
+    
+    .contact-section1 h1{
+        font-size: 200%;
+        /* text-align: center; */
+        margin: 0px;
+    
+    }
+    .contact-section1 p{
+        font-size: 130%;
+        margin-bottom: 20px;
+    
+    }
+    .contact-section1 p a{
+        text-decoration: underline;
+        color: black;
+    
+    }
+    .contact-section1 img{
+       height: 300px;
+       width: 90%;
+       
+    }
+    .contact-section2{
+        width: 90%;
+        margin: 70px auto;
+    }
+    .contact-section2 h1{
+        font-size: 200%;
+        text-align: center;
+        margin: 0px;
+        margin-bottom: 20px;
+    
+    }
+    .contact-section2 p{
+        font-size: 110%;
+        text-align: center;
+        margin: 0px;
+        margin-bottom: 20px;
+    
+    }
+    .contact-section2 .our-values img{
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    
+
+
+
 }
