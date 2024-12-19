@@ -61,7 +61,7 @@ body {
 }
 
 .section1 .info {
-    padding: 50px;
+    padding: 20px 50px;
 }
 
 .section1 h1 {
@@ -70,6 +70,7 @@ body {
     color: hsl(28, 78%, 44%);
     font-weight: 700;
     margin-bottom: 40px;
+    line-height: 80px;
 }
 
 .section1 .contact-btn {
@@ -96,6 +97,7 @@ body {
 .section2 h1 {
     text-align: center;
     font-size: 50px;
+    margin-top: 40px;
 }
 
 .section2 .products {
