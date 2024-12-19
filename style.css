@@ -53,7 +53,7 @@ body {
 
 .section1 {
     margin-top: 120px; /* Prevent header overlap */
-    background-image: url("./Assets/banner.png");
+    background-image: url("./Assets/Untitled\ design\ \(31\).png");
     height: 430px;
     background-size: cover;
     background-position: center;
@@ -144,22 +144,14 @@ body {
 }
 
 /* Footer */
-.footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 70px;
+.footer .company-name h3{
+   text-align: center;
+   margin-bottom: 30px;
+    
 }
 
-.footer .links {
-    display: flex;
-    align-items: center;
-    column-gap: 20px;
-}
 
-.footer .links a img {
-    width: 25px;
-}
+
 @media (max-width: 1210px) {
     .section2 .products {
         margin: 100px 50px;
