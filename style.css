@@ -178,10 +178,12 @@ body {
 
     .section1 h1 {
         font-size: 50px;
+        line-height: 60PX;
     }
 
     .section2 h1 {
         font-size: 35px;
+        
     }
 
     .section2 .products {
@@ -232,6 +234,7 @@ body {
         font-weight: 700;
         margin-bottom: 10px;
         text-align: center;
+        line-height: 40px;
     }
     
     .section1 .contact-btn {
