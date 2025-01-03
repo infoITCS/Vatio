@@ -1,0 +1,203 @@
+header {
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    background-color: white; 
+    z-index: 1000; 
+   
+}
+
+header .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 74px; /* Adjust padding */
+}
+
+header .header .header-img img {
+    width: 260px;
+    cursor: pointer;
+}
+
+header .header .links a {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+header .header .links a:hover {
+    background-color: black;
+    color: white;
+    transition: 0.4s ease;
+}
+
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Section 1 */
+  .section1 {
+    margin-top: 130px;
+    text-align: center;
+    padding: 70px 20px;
+    background-image: url("./Assets/background-HCL.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    width: 100%;
+  }
+  
+  .section1 h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Section 2 */
+  .section2 {
+    margin: 30px auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .section2 h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .hcl-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Make the layout responsive */
+  }
+  
+  .litres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    width: 30%;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .litres img {
+    width: 100%;
+    max-width: 200px; /* Limit image size */
+    border-radius: 8px;
+  }
+  
+  .litres p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .litres:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .footer .company-name h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+
+ 
+  
+
+
+
+
+
+
+
+
+/* Responsive Adjustments */
+
+@media (max-width: 990px) {
+    header .header {
+        padding: 10px 20px;
+    }
+
+    header .header .links a {
+        font-size: 20px;
+        padding: 8px 15px;
+    }
+}
+@media (max-width: 600px){
+    header .header .header-img img {
+        width: 120px;
+        cursor: pointer;
+    }
+    header .header .links a {
+        font-size: 17px;
+       
+        font-weight: 500;
+        border: 2px solid black;
+        padding: 6px 10px;
+    }
+}
+@media (max-width: 1600px) {
+    .hcl-images {
+      justify-content: space-around; /* Spread out items evenly */
+    }
+  
+    .litres {
+      width: 28%; /* Slightly reduce width to prevent wrapping */
+    }
+  }
+@media (max-width: 1016px) {
+    .hcl-images {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .litres {
+      width: 80%; /* Take most of the screen on smaller devices */
+    }
+  
+    .section1 h1 {
+      font-size: 2rem;
+    }
+  
+    .section2 h3 {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .litres {
+      width: 100%;
+    }
+  
+    .section1 h1 {
+      font-size: 1.8rem;
+    }
+  
+    .section2 h3 {
+      font-size: 1.5rem;
+    }
+  }
