@@ -52,7 +52,7 @@ body {
 }
 
 .section1 {
-    margin-top: 120px; /* Prevent header overlap */
+    margin-top: 100px; /* Prevent header overlap */
     background-image: url("./Assets/Untitled\ design\ \(31\).png");
     height: 430px;
     background-size: cover;
